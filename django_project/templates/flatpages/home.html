@@ -1,0 +1,23 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+    {{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+<hr>
+  <h1 style="font-family: Comic Sans MS">{{ flatpage.content }}</h1>
+<hr>
+
+<div style="font-family: Times New Roman; text-align: left">
+    <p style="text-decoration: underline; font-weight: bold; font-size: 25px">Небольшое описание данного 'сайта':</p>
+    <ol>
+    <li>Home - домашняя страница, в частности описание</li>
+    <li>About - первая страница на Django</li>
+    <li>About me - небольшое 'описание' меня</li>
+    <li>Contacts - страница контактов</li>
+    <li>Secret page - страница для всех зарегистрированных</li>
+    <li>Admin - вход в админку</li>
+    </ol>
+</div>
+{% endblock content %}
